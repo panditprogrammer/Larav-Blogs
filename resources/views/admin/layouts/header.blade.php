@@ -55,11 +55,11 @@
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
-                        <i mg class="rounded-circle" src="/admin-assets/img/user.jpg" alt=""
-                            style="width: 40px; height: 40px;">
-                            <div
-                                class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
-                            </div>
+                        <img class="rounded-circle" src="/admin-assets/img/user.jpg" alt=""
+                            style="width: 40px; height: 40px;" />
+                        <div
+                            class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
+                        </div>
                     </div>
                     <div class="ms-3">
                         <h6 class="mb-0">{{ session('BLOG_USER_USERNAME') }}</h6>
@@ -98,11 +98,11 @@
                         <i class="fa fa-tachometer-alt me-2"></i>Dashboard
                     </a>
 
-                    <a href="{{ url('/admin/all-posts') }}" class="nav-item nav-link  <?php echo  $active_all_post ; ?>">
+                    <a href="{{ url('/admin/all-posts') }}" class="nav-item nav-link  <?php echo $active_all_post; ?>">
                         <i class="fa fa-table me-2"></i>All Posts
                     </a>
 
-                    <a href="{{ url('/admin/add-post') }}" class="nav-item nav-link <?php echo  $active_add_post ; ?>">
+                    <a href="{{ url('/admin/add-post') }}" class="nav-item nav-link <?php echo $active_add_post; ?>">
                         <i class="fa fa-keyboard me-2"></i>Add Post
                     </a>
 
@@ -115,7 +115,7 @@
                         </div>
                     </div>
 
-                    <a href="{{ url('/admin/contacts') }}" class="nav-item nav-link <?php echo  $active_contact; ?>">
+                    <a href="{{ url('/admin/contacts') }}" class="nav-item nav-link <?php echo $active_contact; ?>">
                         <i class="fas fa-phone-alt me-2">
                         </i>Contacts
                     </a>
@@ -136,7 +136,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <form class="d-none d-md-flex ms-4">
-                    <i nput class="form-control bg-dark border-0" type="search" placeholder="Search">
+                    <input class="form-control bg-dark border-0" type="search" placeholder="Search" />
                 </form>
 
                 <div class="navbar-nav align-items-center ms-auto">
@@ -145,57 +145,53 @@
                             <i class="fa fa-envelope me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Message</span>
                         </a>
+
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
-                                    <i mg class="rounded-circle" src="{{ url('/admin-assets/img/user.jpg') }}" alt=""
-                                        style="width: 40px; height: 40px;">
-                                        <div class="ms-2">
-                                            <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                            <small>15 minutes ago</small>
-                                        </div>
+                                    <img class="rounded-circle" src="{{ url('/admin-assets/img/user.jpg') }}" alt=""
+                                        style="width: 40px; height: 40px;" />
+
+                                    {{-- <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div> --}}
+
                                 </div>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item text-center">See all message</a>
                         </div>
+
                     </div>
+
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="fa fa-bell me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Notificatin</span>
                         </a>
+
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
                                 <h6 class="fw-normal mb-0">Profile updated</h6>
                                 <small>15 minutes ago</small>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">New user added</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Password changed</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all notifications</a>
                         </div>
                     </div>
+
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i mg class="rounded-circle me-lg-2" src="{{ url('/admin-assets/img/user.jpg') }}" alt=""
-                                style="width: 40px; height: 40px;">
-                                <span class="d-none d-lg-inline-flex">{{ session('BLOG_USER_USERNAME') }}</span>
+                            <img class="rounded-circle me-lg-2" src="{{ url('/admin-assets/img/user.jpg') }}" alt=""
+                                style="width: 40px; height: 40px;" />
+                            <span class="d-none d-lg-inline-flex">{{ session('BLOG_USER_USERNAME') }}</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-
                             <a href="#" class="dropdown-item">My Profile</a>
                             <a href="{{ url('/admin/logout') }}" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
+
                 </div>
             </nav>
             <!-- Navbar End -->

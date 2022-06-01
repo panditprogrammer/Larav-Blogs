@@ -41,7 +41,7 @@
                 <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                     <i class="fa fa-chart-pie fa-3x text-primary"></i>
                     <div class="ms-3">
-                        <p class="mb-2">Total Messages</p>
+                        <p class="mb-2">Messages</p>
                         <h6 class="mb-0">{{$totalmessage}}</h6>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                                 <td>{{ $post->id }}</td>
                                 <td>{{ $post->title }}</td>
                                 <td> <img class="img-thumbnail" width="100px"
-                                        src="{{ '/storage/blogs-images/' . $post->image }}" alt="" srcset=""></td>
+                                        src="{{ '/storage/blogs-images/' . $post->image }}" alt="" srcset="" /></td>
                                 <td>
                                     @if ($post->status)
                                         {{ 'Published' }}
